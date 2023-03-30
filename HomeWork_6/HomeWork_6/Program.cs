@@ -10,15 +10,31 @@ namespace HomeWork_6
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Number : ");
-            string str = Console.ReadLine();
-            bool check = int.TryParse(str, out int number);
-            int factorial = 1;
-            for (int i = number; i > 0; i--)
+            int f = 3;
+        qaytakirit:
+            Console.Write("Enter Celcius : ");
+            f--;
+            string c = Console.ReadLine();
+            bool t = double.TryParse(c, out double r);
+            if (!t)
             {
-                factorial *= i;
+                Console.WriteLine($"Error !!! {c}");
+                if (f <= 0)
+                {
+                    Console.WriteLine("Your attempt has ended. Please try again later");
+                    return;
+                }
+                Console.WriteLine("Enter again");
+                Console.WriteLine($"You have {f} attempts left");
+                goto qaytakirit;
             }
-            Console.WriteLine($"The factorial value of the number {number} is equal to {factorial} ");
+            else
+            {
+                Console.WriteLine($"Kelvin : {r * 10.1}");
+                Console.WriteLine($"Farengeyt : {r * 2.86666667}");
+            }
+            Main(args);
+
         }
     }
 }
