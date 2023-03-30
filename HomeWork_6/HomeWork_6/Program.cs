@@ -10,17 +10,7 @@ namespace HomeWork_6
     {
         static void Main(string[] args)
         {
-<<<<<<< Updated upstream
-            Console.WriteLine("Enter Number : ");
-            string str = Console.ReadLine();
-            bool check = int.TryParse(str, out int number);
-            int factorial = 1;
-            for (int i = number; i > 0; i--)
-            {
-                factorial *= i;
-            }
-            Console.WriteLine($"The factorial value of the number {number} is equal to {factorial} ");
-=======
+
             Console.Write("Enter Number1 : ");
             int Number1 = int.Parse(Console.ReadLine());
             Console.Write("Enter Number2 : ");
