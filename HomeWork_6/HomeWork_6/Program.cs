@@ -19,6 +19,7 @@ namespace HomeWork_6
                 factorial *= i;
             }
             Console.WriteLine($"The factorial value of the number {number} is equal to {factorial} ");
+            Main(args);
         }
     }
 }
