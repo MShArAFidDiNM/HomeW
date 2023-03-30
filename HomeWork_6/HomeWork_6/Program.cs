@@ -9,16 +9,14 @@ namespace HomeWork_6
     internal class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("Enter Number : ");
-            string str = Console.ReadLine();
-            bool check = int.TryParse(str, out int number);
-            int factorial = 1;
-            for (int i = number; i > 0; i--)
-            {
-                factorial *= i;
-            }
-            Console.WriteLine($"The factorial value of the number {number} is equal to {factorial} ");
+        {          
+            int Number = int.Parse(Console.ReadLine());
+            int count = 0;
+            for (int i = 1; i <= Number; i++) if (Number % i == 0) count++;
+            if (count == 2) Console.WriteLine("Prime number ");
+            else Console.WriteLine("is not prime number  ");
+            Main(args);
+
         }
     }
 }
