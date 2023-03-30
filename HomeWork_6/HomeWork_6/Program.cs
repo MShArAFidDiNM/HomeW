@@ -31,7 +31,6 @@ namespace HomeWork_6
             Console.WriteLine($"Min : {min}");
             Console.WriteLine($"Result : {max - min}");
             Main(args);
->>>>>>> Stashed changes
         }
     }
 }
